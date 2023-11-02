@@ -2,10 +2,22 @@ body{
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: "Museo Sans Cyrl";
+    src: url(../fonts/museo-sans-cyrl-300.woff);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Museo Sans Cyrl";
+    src: url(../fonts/museo-sans-cyrl-500.woff);
+    font-weight: 500;
+}
 .container{
      max-width: 1551px;
      margin: 0 auto;
      padding: 0 15px;
+     border: 2px solid red;
+     
 }
 .headers{
     background:#2B150D;
@@ -155,7 +167,7 @@ body{
     border: none;
     background: #FF7A1B;
     padding: 12px;
-    width: 223px;
+    max-width: 223px;
     border-radius: 8px;
     
 }
@@ -201,5 +213,633 @@ body{
     font-size: 16px;
     font-weight: 400;
 }
+.hero{
+    background:  #F9F8F3;
+    padding: 20px 0 0 ;
+}
+.header__after{
+
+}
+.after-header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background: #2B150D;
+    max-width: 100%;
+    padding: 12px;
+
+    
+}
+.header3__burger-input{
+    color: #818181;
+    font-family: Museo Sans Cyrl;
+    font-size: 18px;
+    font-weight: 300;
+    width: 352px;
+    border-radius: 8px;
+    background:#FFF;
+    border: none;
+}
+.heros{
+    background: url(../image/grass.jpg) center / cover;
+    height: 376px;
+    position: relative;
+    overflow: hidden;
+
+}
+.hero-title{
+    color: #FFF;
+    font-family: Museo Sans Cyrl;
+    font-size: 65px;
+    font-weight: 600;
+    margin-left: 90px;
+    
+}
+.hero__benefit{
+    background: #FF7A1B;
+    position: absolute;
+    bottom: 45px;
+    height: 66px;
+    width: calc(100% - 150px);
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-family: Museo Sans Cyrl;
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 15px;
+    z-index: 2;
+    width: 100%;
+}
+
+
+    .hero__image{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+    .hero__image img{
+        position: relative;
+        z-index: 3;
+    }
+
+    .hero__image:after{
+        content: "";
+        width: 760px;
+        height: 760px;
+        background: #ffffff;
+        position: absolute;
+        right: -370px;
+        bottom: -200px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    .catalogs{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 47px;
+    }
+   
+    .catalog__1{
+        display: flex;
+    }
+    .catalog-text{
+        color: #2D170C;
+        font-family: Museo Sans Cyrl;
+        font-size: 14px;
+        font-weight: 400;
+        max-width: 231px;
+
+    }
+    .category{
+        display: flex;
+        gap: 20px;
+    }
+  .category__1{
+    border-radius: 6px;
+    background: #FFF7D9;
+    }
+    .category__1__image{
+        position: relative;
+    }
+    .category__1-grass{
+        width: 100%;
+        position: relative;
+    }
+    .category__1-house{
+       max-width: 384px;
+    }
+    
+ .category__content{
+    display: flex;
+    gap: 17px;
+    padding: 0 24px;
+ }
+.category__2-first{
+    border-radius: 6px;
+    background: #FFF7D9;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 100%;
+    padding: 18px 24px 0;
+}
+.category__2-house{
+    position: relative;
+    z-index:2;
+    top: 0;
+}
+.category__2-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.category__2{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+.category__3{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.category__3-first{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    background: #FFF7D9;
+    width: 500px;
+    height: 100%;
+    padding: 18px 24px 0;
+}
+.category__3-house{
+  max-width: 232px;
+}
+.category__3-grass{
+    position: relative;
+    width: 100%;
+}
+
+.header4__burger{
+    text-align: center;
+    color: #000;
+    font-family: Museo Sans Cyrl;
+    font-size: 16px;
+    font-weight: 400;
+}
+.header4__burger{
+    background: #FFD634;
+    max-width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 3px;
+}
+.header4__burger-title{
+    color: #000;
+    font-family: Museo Sans Cyrl;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.bestseller__list{
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.item-imag{
+    width: 100%;
+}
+.articul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bestseller__item-title{
+    color: #000;
+    font-family: Museo Sans Cyrl;
+    font-size: 18px;
+    font-weight: 400;
+}
+.size__arrow{
+    display: flex;
+    align-items: center;
+    width: 350px;
+    gap: 25px;
+}
+.item__info{
+   
+}
+.size__arrow-input{
+    border:none;
+    border-bottom: 1px dotted gray;
+}
+.reviews{
+    background: #F9F8F3;
+    padding: 77px 0 55px
+}
+.review__list{
+    display: flex;
+    gap: 16px;
+}
+.review{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.review__item{
+    border-radius: 5px;
+    border: 1px solid  #E8E8E8;
+    background: #FFF;
+    padding: 27px 25px;
+   
+}
+.review__list-btn{
+    display: flex;
+    justify-content: center;
+}
+.review__list-btns{
+    color:  #FFF;
+    font-family: Museo Sans Cyrl;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 3px;
+    border: 1px solid  #E8E8E8;
+    background:  #FF7A1B;
+    padding: 10px 33px;
+    border: none;
+    margin-top: 26px;
+}
+
+.header-title{
+    display: flex;
+    flex-direction: column;
+}
+.header__star{
+    display: flex;
+    flex-direction: column;
+}
+.review__item__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-title{
+    color: #000;
+    font-family: Museo Sans Cyrl;
+    font-size: 18px;
+    font-weight: 300;
+}
+.header__date{
+    color:  #BBB;
+    font-family: Museo Sans Cyrl;
+    font-size: 14px;
+    font-weight: 300;
+}
+.star-text{
+    color:  #2B150D;
+    font-family: Museo Sans Cyrl;
+    font-size: 13px;
+    font-weight: 300;
+}
+.item-text-link{
+    color:  #FF7A1B;
+    font-family: Museo Sans Cyrl;
+    font-size: 14px;
+    font-weight: 400;
+}
+.aboutus__info1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info1__text__2{
+    display: flex;
+    align-items: flex-start;
+}
+.info1__text2{
+    color: #000;
+    font-family: Museo Sans Cyrl;
+    font-size: 18px;
+    font-weight: 400;
+    width: 673px;
+}
+.aboutus__info2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 55px;
+
+}
+.info1-image1{
+    width: 100%;
+}
+.info2-title{
+    color: #FF7A1B;
+    font-family: Museo Sans Cyrl;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+.info1__text1{
+    width: 569px;
+}
+.info1__text2-end{
+    font-family: Museo Sans Cyrl;
+    font-size: 16px;
+    font-weight: 300;
+    color: #BBB;
+}
+.info2-span{
+    color:  #BBB;
+    font-family: Museo Sans Cyrl;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.info2-text-link{
+    color:#FF7A1B;
+    font-family: Museo Sans Cyrl;
+    font-size: 14px;
+    font-weight: 300;
+}
+.info1__image{
+    box-shadow: -25px 25px 25px #e8e8e8;
+    border-radius: 8px;
+}
+.about__info2-info1{
+
+}
+.aboutus__info1-line{
+    border: 1px solid #FF7A1B;
+    max-width:50%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer__form{
+    background: #F9F8F3;
+    padding: 45px 0;
+}
+.footer__form__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__form__header-title{
+    color: #000;
+    font-family: "Museo Sans Cyrl";
+    font-size: 24px;
+    font-weight: 500;
+}
+.footer__form__btns-input{
+    color:  #BBB;
+    font-family: Museo Sans Cyrl;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    padding: 15px;
+}
+.footer__form__btns-btn{
+    color: #FFF;
+    font-family: Museo Sans Cyrl;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+    background: #FF7A1B;
+    border: none;
+    padding: 15px 35px;
+}
+.footer__form__btns{
+   display: flex;
+   gap: 33px;
+}
+.footer{
+    background: #1F1F1F;
+    padding-top: 30px;
+}
+.footer__logo__colors{
+    display: flex;
+    gap: 10px;
+}
+.footer__logo{
+    display: flex;
+    align-items: center;
+    gap: 122px;
+}
+
+
+.footer__logo-color{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 9px;
+    background:orange;
+}
+.footer__colors-title{
+color: #FFF;
+font-family: Museo Sans Cyrl;
+font-size: 14px;
+font-weight: 400;
+
+}
+.footer__address-street, .timecall{
+color: #FFF;
+font-family: Museo Sans Cyrl;
+font-size: 18px;
+font-weight: 400;
+}
+.time{
+color: #FF7A1B;
+font-family: Museo Sans Cyrl;
+font-size: 18px;
+font-weight: 600;
+}
+.footer___address-call{
+color: #FFF;
+font-family: Museo Sans Cyrl;
+font-size: 18px;
+font-weight: 400;
+border-radius: 6px;
+background: #FF7A1B;
+border: none;
+padding: 14px 20px;
+}
+.color2{
+    background: rgb(105, 69, 69);
+}
+.color3{
+    background: yellow;
+}
+.footer__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__address{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+
+}
+
+
+
+
+
+
+@media screen and (max-width:1555px) {
+    .after-header, .header4__burger{
+        display: none;
+    }
+
+}
+@media screen  and (max-width:1370px) {
+   .contact__tel, .tel, .header2__contact-time, .header__list {
+          display: none;
+   }
+   .header__content-input{
+    width: 300px;
+   }
+ 
+    
+}
+
+@media screen and (max-width:1138px) {
+    .hero-title{
+        font-size: 55px;
+    }
+}
+@media screen and (max-width:1100px) {
+    .header2__logo{
+        display: none;
+    }
+}
+@media screen and (max-width:1031px) {
+    .header4__burger{
+        background: #FFD634;
+        max-width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 3px;
+    }
+    .header3 {
+        display: none;
+    }
+   
+    
+    .catalog__1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .catalogs{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    .place1{
+      display: none;
+    }
+    .hero-title{
+        font-size: 45px;
+    }
+
+}
+@media screen and (max-width:936px) {
+  .headers2, .header3, .header{
+    display: none;
+  }
+  .after-header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background: #2B150D;
+    max-width: 100%;
+    padding: 12px;
+
+    
+}
+.heros{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.hero-title{
+    margin: 0;
+    text-align: center;
+}
+.hero__image, .hero__benefit{
+    display: none;
+}
+    
+}
+
+
+
+@media screen and (max-width:822px) {
+    .hero__image, .hero__benefit{
+        display: none;
+    }
+    .hero-title{
+        padding: 0;
+        text-align: center;
+        
+    }
+}
+
+@media screen and (max-width:620px) {
+  
+ 
+}
+@media screen and (max-width:538px) {
+    .burger-image{
+        width: 30px;
+    }
+    .header3__burger-input{
+        width: 150px;
+        padding: 12px;
+    }
+}
+@media screen and (max-width:450px) {
+    .hero-title{
+        font-size: 30px;
+    }
+}
+.category__after__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F9F8F3;
+}
+.category__after__list{
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    gap:15px;
+}
+@media screen and (max-width:450px) {
+    .review__list{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 
 
